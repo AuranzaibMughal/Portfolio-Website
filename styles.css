@@ -1,0 +1,158 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #101820; /* Dark Background */
+    color: #e8e8e8; /* Light Text */
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to right, #ff8c00, #e52e71); /* Orange-Pink Gradient */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    text-shadow: 2px 2px #333;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 1rem;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #00ffcc; /* Cyan */
+    transform: scale(1.1); /* Zoom-in effect */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc); /* Purple-Blue Gradient */
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); /* Slant design */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Section */
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+    background: #1a1a2e;
+    color: #e8e8e8;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #ff8c00;
+    text-shadow: 2px 2px 4px #222;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #2c2c54; /* Deep Purple */
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    color: #00ffcc;
+}
+
+.project p {
+    font-size: 1.1rem;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #fff;
+    background: linear-gradient(to right, #ff8c00, #e52e71); /* Button Gradient */
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.project a:hover {
+    background: #00ffcc; /* Cyan hover */
+    transform: scale(1.1);
+}
+
+.project:hover {
+    transform: translateY(-10px); /* Pop-out effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Links */
+#contact a {
+    color: #ff8c00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #00ffcc;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #1a1a2e;
+    color: #fff;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+    border-top: 2px solid #ff8c00;
+}
